@@ -13,20 +13,30 @@ body,
 }
 
 body {
-  background: white;
-  font-family: "Inter var", sans-serif;
+  background: #272730;
+  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
 }
 
 #root {
-  width: 76ch;
+  /* width: 76ch; */
 }
 
-h1 {
-  position: absolute;
+.header{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.header h1 {
+  /* position: absolute;
   top: 43px;
-  left: 140px;
+  left: 140px; */
+  text-align: center;
   padding: 0;
   margin: 40px;
   font-size: 5em;
@@ -36,10 +46,26 @@ h1 {
   color: #272730;
 }
 
-.picker {
-  position: absolute !important;
+.header .picker {
+  /* position: absolute !important;
   top: 74px;
-  left: 70px;
-  width: 90px !important;
-  height: 90px !important;
+  left: 70px; */
+  margin: 25px;
+  width: 250px !important;
+  height: 250px !important;
+}
+
+
+.item1 { grid-area: picker; }
+.item2 { grid-area: shoe; }
+
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    'picker picker shoe shoe shoe shoe';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
 }
