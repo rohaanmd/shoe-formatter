@@ -98,15 +98,25 @@ const Shoez = () =>
 
 export default function App() {
   return (
-    <>
+    <>  <div className="header_main"> 
+      
+       <h1>Change color of this Shoe</h1>
+    
+      <h4>Select any part</h4>
+  
+      </div> 
+
+      
     <div className="container">
+
 
 <div className="item1"><Picker /></div>
 <div className="item2"> <Shoez /></div>
-    
+
     </div>
+  
     
-    
+    <footer>Made with ❤️ by <a href="https://rohaanmd.netlify.app/">Mohd Rohaan</a></footer>
       
     </>
   )

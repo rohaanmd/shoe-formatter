@@ -1,3 +1,5 @@
-# shoe-formatter
+# Custom Shoe
 
-Created with CodeSandbox
+Here is the [demo](https://custom-shoe.netlify.app/) 
+
+
